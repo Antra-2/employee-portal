@@ -1,0 +1,9 @@
+services:
+
+  app:
+    build: .
+    container_name: employee-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/var/www/html
